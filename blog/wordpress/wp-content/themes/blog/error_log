@@ -1,0 +1,2 @@
+[27-May-2018 23:21:58 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home1/icoolsho/icoolshow/nsc/smart2/blog/wordpress/wp-content/themes/blog/index.php on line 1
+[27-May-2018 23:22:04 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home1/icoolsho/icoolshow/nsc/smart2/blog/wordpress/wp-content/themes/blog/index.php on line 1

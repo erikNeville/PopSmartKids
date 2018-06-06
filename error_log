@@ -1,0 +1,16 @@
+[04-Jun-2018 16:57:12 America/Denver] PHP Fatal error:  Call to undefined function alert() in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 33
+[04-Jun-2018 16:57:22 America/Denver] PHP Fatal error:  Call to undefined function alert() in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 33
+[04-Jun-2018 16:57:28 America/Denver] PHP Notice:  Undefined variable: FName in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 70
+[04-Jun-2018 16:57:28 America/Denver] PHP Notice:  Undefined variable: LName in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 70
+[05-Jun-2018 18:58:51 America/Denver] PHP Notice:  Undefined index: g-recaptcha-response in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 27
+[05-Jun-2018 22:20:53 America/Denver] PHP Notice:  Undefined variable: email in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 71
+[05-Jun-2018 22:20:53 America/Denver] PHP Notice:  Undefined variable: FName in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 71
+[05-Jun-2018 22:20:53 America/Denver] PHP Notice:  Undefined variable: LName in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 71
+[05-Jun-2018 22:31:00 America/Denver] PHP Notice:  Undefined variable: phone in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 57
+[05-Jun-2018 22:31:00 America/Denver] PHP Notice:  Undefined variable: email in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 58
+[05-Jun-2018 22:31:00 America/Denver] PHP Notice:  Undefined variable: company in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 59
+[05-Jun-2018 22:31:00 America/Denver] PHP Notice:  Undefined variable: website in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 60
+[05-Jun-2018 22:31:00 America/Denver] PHP Notice:  Undefined variable: comments in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 61
+[05-Jun-2018 22:31:00 America/Denver] PHP Notice:  Undefined variable: email in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 76
+[05-Jun-2018 22:31:00 America/Denver] PHP Notice:  Undefined variable: FName in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 76
+[05-Jun-2018 22:31:00 America/Denver] PHP Notice:  Undefined variable: LName in /home1/icoolsho/icoolshow/nsc/smart2/formhandler.php on line 76

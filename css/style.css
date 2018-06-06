@@ -1,0 +1,799 @@
+@font-face {
+    font-family: 'Caviar';
+    src: url('../fonts/CaviarDreams.eot');
+    src: url('../fonts/CaviarDreams.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CaviarBold';
+    src: url('../fonts/CaviarDreams-Bold.eot');
+    src: url('../fonts/CaviarDreams-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CaviarBoldItalic';
+    src: url('../fonts/CaviarDreams-BoltItalic.eot');
+    src: url('../fonts/CaviarDreams_BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CaviarItalic';
+    src: url('../fonts/CaviarDreams-Italic.eot');
+    src: url('../fonts/CaviarDreams_Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* font to be used, added 5-29 at 5:22pm */
+
+
+/* @font-face needs to be placed above the body */
+
+
+/* The body's font-family is Caviar. If you want to change any other 
+    section's font-family, just add font-family: <one of the names above> '*/
+
+body {
+    font-family: 'Caviar';
+    /* added font-weight 5/31 to make all text bolder */
+    font-weight: 900;
+    height: 100%;
+    line-height: 1.6;
+    overflow-x: visible !important;
+}
+
+
+/* All things header (navbar in Bootstrap speak) go here.
+    To understand how to change things around you kind of just
+    have to look through the html classes that are used in opening tags.
+    I'm pretty sure this is the most complicated part. */
+
+.navbar {
+    font-weight: 900;
+    margin: 0;
+    border-radius: 0;
+    color: #000;
+    background-color: rgba(255, 255, 255, .97);
+    /* padding pixels controls height of header */
+    padding: 13px 0;
+    font-size: 1.2em;
+    border: 0;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.navbar-brand {
+    float: left;
+    min-height: 59px;
+    padding: 0 15px 15px;
+}
+
+.navbar-inverse .navbar-nav .active li a {
+    color: #d5d5d5;
+    background-color: #77B5FE;
+    /* this is the color of the owl by the way */
+}
+
+.navbar-inverse .navbar-nav .active a,
+.navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover {
+    color: #fff !important;
+    background-color: #77B5FE;
+}
+
+.navbar-toggle {
+    background: #77B5FE;
+}
+
+.navbar-toggle:hover {
+    background: #79CDCD;
+}
+
+
+/*changed 5-30*/
+
+.local a:hover {
+    color: #77B5FE !important;
+}
+
+.dropdown a:hover {
+    color: #77B5FE !important;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+	color:#9d9d9d;
+}
+.logo {
+    max-height: 55px;
+    border-radius: 10px;
+}
+
+
+/* End header (navbar) section */
+
+h1 {
+    text-align: center;
+}
+
+
+/* container is used throughout the bootstrap html, you can search for it within the html */
+
+.container {
+    margin: 4% auto;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+div.a {
+    font-size: 130%;
+    /*    padding-bottom: 12px;*/
+    padding: 0 1.5% 12px 1.5%;
+}
+
+li.a {
+    font-size: 130%;
+    padding-bottom: 6px;
+}
+
+.p {
+    font-size: 10em;
+}
+
+
+/* All things banner related */
+
+.jumbotron {
+    background-size: cover;
+    background-position: center center;
+    margin-top: 86px;
+    margin-bottom: 20px;
+    background-size: cover;
+    color: #fff;
+    border-radius: 0;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    z-index: 1;
+    overflow-y: hidden;
+}
+
+#banner-midsect {
+    text-align: center;
+    font-size: 1.2em;
+    height: 200px;
+}
+
+
+/* home page banner image */
+
+#home {
+    background-image: url(../images/PhoneBeach.jpg);
+    background-position: center center;
+    max-height: 630px;
+}
+
+
+/* about page banner image */
+
+#about {
+    height: 10px;
+}
+
+
+/* products page banner image */
+
+#products {
+    height: 20px;
+}
+
+
+/* blog page banner image */
+
+#blog {
+    height: 20px;
+}
+
+
+/* contact us page banner image */
+
+#contactus {
+    height: 20px;
+}
+
+
+/* privacy policy image*/
+
+#privacypolicy {
+    height: 20px;
+}
+
+
+/* products page banner image */
+
+#safezone {
+    height: 20px;
+}
+
+
+/* empty legal jumbotron */
+
+#legal {
+    height: 20px;
+}
+
+
+/* empty thanks page jumbo */
+
+#thx {
+    height: 20px;
+}
+
+#IndividualProduct {
+    height: 20px;
+}
+
+#safezone {
+    height: 20px;
+}
+
+
+/* This is the text in the center of the banner image */
+
+.display-3 {
+    font-family: CaviarBold;
+    font-size: 1.5em;
+    transform: translateY(-30%);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #000;
+    margin: 10px 0 10px 0px;
+}
+
+p.people {
+    font-size: 1.2em;
+    text-shadow: 1px 1px #000;
+}
+
+
+/* End Jumbotron */
+
+
+/*Section with a sign up bar */
+
+
+/*resizing the sign up bar and centering*/
+
+#signup img {
+    /*float: right;*/
+    /*        width: 200px;*/
+    margin: auto;
+    height: 45px;
+    padding-right: 10px;
+    /*    max-width: 100%;*/
+}
+
+#signupText {
+    float: left;
+    font-size: 1.6em;
+    padding: 5px 10px 5px 10px;
+}
+
+
+/* Section which displayes the title of the page below the banner */
+
+#page-title {
+    font-family: Caviar Dreams, sans-serif;
+}
+
+
+/* This section controls the circular testimonial icons, which are pokemon now */
+
+#icon {
+    max-width: 180px;
+    min-width: 180px;
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    margin: 1% auto;
+    border-radius: 100px;
+    background-color: #77B5FE;
+    border: 1px solid black;
+    object-fit: cover;
+}
+
+#testimonial {
+    height: 20px;
+}
+
+
+/* testimonial button at bottom */
+
+#testButton {
+    max-width: 327px;
+    transition: transform .2s;
+}
+
+#testButton:hover {
+    text-decoration: none;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#signupButton {
+    max-width: 327px;
+    transition: transform .2s;
+}
+
+#signupButton:hover {
+    text-decoration: none;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* end testimonial button */
+
+
+/* Safe Zone customization  */
+
+
+/*minimize the bottom margin for the text*/
+
+#safeZoneCont1 {
+    margin: 4% auto 0;
+}
+
+
+/*place the container with the image to the bottom right and close to text*/
+
+#safeZoneCont2 {
+    margin: 0 0;
+    width: auto;
+    padding-right: 0;
+}
+
+
+/*place the image to the right*/
+
+#owlimgcont {
+    float: right;
+}
+
+
+/*set the size of the image and place it closer to the text*/
+
+.owlimg {
+    width: 420px;
+    padding-top: 0px;
+    float: right;
+}
+
+
+/* end of SafeZone*/
+
+
+/* This is the footer section, including .fab, which are our social media links. */
+
+.page-footer {
+    width: 100%;
+    padding: 5%;
+}
+
+
+/* privacy and legal links */
+
+.footer-info {
+    color: #000;
+    text-decoration: none;
+    font-family: CaviarBold;
+    letter-spacing: .8px;
+    font-size: 1em;
+}
+
+.footer-info:hover {
+    color: #808080;
+    text-decoration: none;
+}
+
+.footer-hr {
+    margin: 1% 27% 1%;
+}
+
+.fab {
+    padding: 1%;
+    font-size: 30px;
+    color: #000;
+}
+
+.fab:hover {
+    color: #696969;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    font-size: .78em;
+}
+
+
+/* changing the size of social media links with mobile screens */
+
+@media (max-width: 900px) {
+    .fab {
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+
+form {
+    max-width: 700px;
+    margin: 5%;
+    margin-bottom: 50px;
+}
+
+span {
+    color: red;
+}
+
+fieldset {
+    padding: 10px;
+    margin: 20px 0px 100px 20px;
+    border: 1px solid #666;
+}
+
+legend {
+    font-size: 2em;
+    padding: 5px;
+    font-family: CaviarBoldItalic;
+}
+
+input[type=text],
+input[type=phone],
+input[type=email] {
+    height: 35px;
+    width: 75%;
+    margin: 10px 20px;
+}
+
+input.email {
+    height: 35px;
+    width: 75%;
+    margin: 10px 20px;
+}
+
+textarea {
+    width: 75%;
+    margin-left: 10px;
+}
+
+div#wrapper {
+    width: 940px;
+    margin: 0 auto;
+    background: none;
+}
+
+
+/* This controls how far down the page titles appear */
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 2.4em;
+    }
+    h2 {
+        font-size: 1.7em;
+    }
+    #testButton {
+        max-width: 200px;
+    }
+    #signupButton {
+        max-width: 200px;
+    }
+    #icon {
+        max-width: 150px;
+    }
+    #about {
+        height: 70px;
+    }
+    #blog {
+        height: 70px;
+    }
+    #products {
+        height: 70px;
+    }
+    #contactus {
+        height: 70px;
+    }
+    #privacypolicy {
+        height: 70px;
+    }
+    #safezone {
+        height: 70px;
+    }
+    #legal {
+        height: 70px;
+    }
+    /*
+    #testimonial {
+        height: 70px;
+    }
+    */
+    #thx {
+        height: 70px;
+    }
+    #IndividualProduct {
+        height: 70px;
+    }
+}
+
+
+/* this controls font sizes for smaller screens (>=600px) */
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.1em;
+    }
+    h2 {
+        font-size: 1.7em;
+    }
+    .fab {
+        font-size: 26px;
+    }
+}
+
+
+/* The TY Modal (background) */
+
+.betaModalTY {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Enable scroll if needed */
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 2.5vh;
+}
+
+
+/* TY Modal Content/Box */
+
+.modal-contentBetaTY {
+    background-color: white;
+    /* 15% from the top and centered */
+    padding: 5px 10px 10px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* TY Modal image logo resizing*/
+
+.betaModalTY img {
+    width: 18vw;
+    height: 5vw;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* The Close Button */
+
+.betaCloseTY {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.betaCloseTY:hover,
+.betaCloseTY:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* The TY Modal (background) */
+
+.betaModal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Enable scroll if needed */
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 2.5vh;
+}
+
+
+/* TY Modal Content/Box */
+
+.betaModal-contentBeta {
+    background-color: white;
+    /* 15% from the top and centered */
+    padding: 5px 10px 10px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* TY Modal image logo resizing*/
+
+.betaModal img, .modal img{
+    width: 50%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* The Close Button */
+
+.betaClose {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.betaClose:hover,
+.betaClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* The TY Modal (background) */
+
+.tyModal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Enable scroll if needed */
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 2.5vh;
+}
+
+
+/* TY Modal Content/Box */
+
+.modal-contentTY {
+    background-color: white;
+    /* 15% from the top and centered */
+    padding: 5px 10px 10px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* TY Modal image logo resizing*/
+
+.tyModal img {
+    width: 18vw;
+    height: 5vw;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* The Close Button */
+
+.tyClose {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tyClose:hover,
+.tyClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* The Modal (background) */
+
+
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: white;
+    /* 15% from the top and centered */
+    padding: 5px 10px 10px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    /* Could be more or less, depending on screen size */
+}
+
+.modal-backdrop {
+    display: none;
+}
+
+
+/* Modal image logo resizing*/
+
+
+
+
+/* The Close Button */
+
+.close {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+textarea {
+    width: 90%;
+    margin-left: 10px;
+    resize: none;
+}
+
+.g-recaptcha {
+    transform: scale(0.77);
+}
+
+
+/* Fix for bootstrap body shift */
+body{
+	padding-right:0 !important;
+}
+.row{
+	margin: 0px;
+}
+.modal-open{
+	overflow:visible;
+	overflow-y:none;
+}
+.modal h2{
+	text-align:center;
+}
+.modal-body{
+	overflow:hidden;
+}

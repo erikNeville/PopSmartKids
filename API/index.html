@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PopSmart Kids</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- load bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- load font awesome for social media icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- our local style sheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- A google api font, really easy to change -->
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	
+	<!-- favicon -->
+    <link rel="icon" type="image/png" href="../images/favicon-32x32.png" sizes="32x32" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119802114-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119802114-1');
+
+    </script>
+</head>
+
+<body>
+    <!-- Begin Header (navbar) section -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <!-- these spans are meant to be empty-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- NavBar logo image in the top left -->
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../images/navbarLogo.png" alt="SmartPopKids Logo"></a>
+            </div>
+            
+            <div class="collapse navbar-collapse text-right" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="local">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="local">
+                        <a href="../aboutUs.html">About Us</a>
+                    </li>
+                    <li class="local">
+                        <a href="/products/">Products</a>
+                    </li>
+                    <li class="local">
+                        <a href="/blog/">Blog</a>
+                    </li>
+                    <li class="local">
+                        <a href="../contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	
+	<!-- empty container to adjust for navbar height -->
+    <div class="container" id="contactus"></div>
+
+    <div class="container" style="border-bottom:#F0F0F0 1px solid">
+        <h1>
+            <center><strong><font color="#77B5FE">API</font></strong></center>
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <p>PopSmartKids API Information</p>
+				<p>API Version 1.0</p>
+				<p>JSON response for product information</p>
+				<p>PopSmartKids offers a request to retrieve product information through our API.
+				Making this request will return PopSmartKids product info, including title, description, 
+				and a link to its page on our website.</p>
+				<p>To make this request, please visit <a href="fullJson.php">smart2.icoolshow.net/API/fullJson.php</a></p><br>
+				<p>Response format will appear as follows:</p>
+				<p>{<br>"id":1,<br>"title":"Product Name",<br>
+				"description":"Product description",<br>
+				"url":"product url"<br>
+				}</p></br>
+				<p>Wordpress offers a full Rest API as well, with full product information less pertinent to most users.</p>
+				<p>To make the Wordpress JSON request, please visit <a href="../products/wp-json/wp/v2/posts">smart2.icoolshow.net/products/wp-json/wp/v2/posts</a></p>
+				<p>*To retrieve individual product data, add a dash (/) and the product id number to the end of that URL (ex- smart2.icoolshow.net/products/wp-json/wp/v2/posts/1).</p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="page-footer font-small indigo pt-0">
+        <!-- light grey line that seperates footer items -->
+        <hr class="footer-hr">
+
+		<!-- Footer links -->
+        <div class="container-fluid">
+            <div class="row justify-content-md-center text-center">
+
+                <div class="col-md-3 mb-3">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a class="footer-info" href="../privacyPolicy.html">Privacy Policy</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a class="footer-info" href="../legal.html">legal</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a class="footer-info" href="../safeZone.html">safe zone</a>
+                    </h6>
+                </div>
+            </div>
+            <hr class="footer-hr">
+
+            <div class="row pb-3">
+
+                <!-- Social Media -->
+                <div class="col-md-12">
+                    <div class="mb-5 text-center">
+                        <a href="https://facebook.com/popsmartkids/" class="fab fa-facebook-square"></a>
+                        <a href="https://twitter.com/popsmartkids/" class="fab fa-twitter-square"></a>
+                        <a href="https://linkedin.com/in/priyankaraha/" class="fab fa-linkedin"></a>
+                        <a href="https://linkedin.com/in/priyankaraha/" class="fab fa-google-plus-square"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Copyright-->
+        <div class="footer-copyright py-3 text-center">
+            © 2018 Copyright: PopSmartKids
+        </div>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

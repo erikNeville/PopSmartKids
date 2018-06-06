@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PopSmartKids | Reimagining Digital Playtime For Kids</title>
+    
+	<meta name="keywords" content="PopSmartKids, kids, digital, playtime, parents, quality time, spending time with kids, encouraging kids to write, PopSmartKids for kids, PopSmartKids for families">
+	
+	<meta name="description" content="PopSmartKids creates digital playgrounds for kids that promote creativity and connectivity to others">
+	
+	<link rel="canonical" href="http://www.popsmartkids.com/" />
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="24838225583-0v1ubr6koflcb7t8lbk6rg5soi71qion.apps.googleusercontent.com">
+
+	<link rel="canonical" href="http://www.popsmartkids.com/" />
+	
+    <!-- I'm honestly not sure if bootstrap even uses jquery but the tutorial said to put this here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- load bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- load font awesome for social media icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- our local style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/print.css">-->
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+
+    <!-- I moved all of the media tags to a separate css file so that we
+        can accommodate for all of the available screen sizes without 
+        cluttering our main style.css file -->
+    <!--    <link rel="stylesheet" href="css/print.css" media="print">-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119802114-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119802114-1');
+    </script>
+</head>
+
+<body>
+    <!-- Begin Header (navbar) section -->
+    <!-- This section should stay with each static page, as is, with the exception of changing out
+        which links are available in the nav bar depending on where you are -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- This creates the navbar button that changes with smaller screen sizes -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <!-- these spans are meant to be empty, they just create the lines inside the button -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is bootstrap, this is where our logo image in the top left goes -->
+                <a class="navbar-brand" href="index.html"><img class="logo" src="images/navbarLogo.png" id="logo-img"></a>
+            </div>
+            <!-- this continues to create the navbar/button which changes with screen size -->
+            <div class="collapse navbar-collapse text-right" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="local">
+                        <a href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="local">
+                        <a href="/products/">Products</a>
+                    </li>
+                    <li class="local">
+                        <a href="/blog/">Blog</a>
+                    </li>
+                    <li class="local">
+                        <a href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end collapsing navigation section -->
+        </div>
+    </nav>
+    <!-- end header (navbar) section -->
+
+    <!-- Begin banner (jumbotron) section, This one is easy to understand, all of the classes are bootstrap -->
+
+    <!-- change the id to whichever html file is being used -->
+    <div class="jumbotron jumbotron-fluid" id="home">
+        <div class="container text-center">
+            <h3 class="display-3">Applications empowering children to become:</h3>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3"></div>
+                <div class="col-xs-6 text-center" id="banner-midsect">
+                    <p class="people">Engineers</p>
+                    <p class="people">Writers</p>
+                    <p class="people">Entrepreneurs</p>
+                    <p class="people">Mathematicians</p>
+                </div>
+                <div class="col-xs-3"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End banner (jumbotron) section -->
+	<input type="submit" id="newsHidden" style="display: none;" data-dismiss="modal" data-toggle="modal" data-target="#newsModal">
+    <!--Sign up section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <p id="signupText">Interested in our apps? Sign up to our beta for a chance at a free download!</p>
+            </div>
+            <div class="col-sm-5 text-center">
+                <a data-toggle="modal" data-target="#betaModal">
+                    <img src="images/signup.png" alt="PopSmartKids Beta Signup" id="signupButton">
+                </a>
+            </div>
+            <!--            <div class="col-sm-2"></div>-->
+        </div>
+    </div>
+
+	<div class="modal fade" id="betaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-body">
+			<span class="close" name="betaClose" data-dismiss="modal">&times;</span>
+                    <img src="images/popkids_text8crop.png" alt="popsmartkids_logo">
+					<h2>Sign up for our Beta!</h2>
+                    <div align="center">
+                        <input type="email" id="emailFieldBeta" class="email" name="emailFieldBeta" placeholder="Enter your email here.">
+                    </div>
+					<div align="center">
+                        <button type="submitValidate" class="submit" id="submitBeta">Submit</button>
+						<input type="submit" id="submitHidden" style="display: none;" data-dismiss="modal" data-toggle="modal" data-target="#betaModalTY">
+					</div>
+			<br>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="modal fade" id="betaModalTY" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-body">
+			<span class="close" name="betaClose" data-dismiss="modal">&times;</span>
+					<img src="images/popkids_text8crop.png" alt="popsmartkids_logo">
+					<h2>Thank you for signing up for the beta.</h2>
+			<br>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!--Newsletter Modal Holla-->
+        <div class="modal fade" id="newsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<span class="close" name="newsClose" data-dismiss="modal">&times;</span>
+						<img src="images/popkids_text8crop.png" alt="popsmartkids_logo">
+						<h2>Sign up for our Newsletter!</h2>
+						<div align="center">
+							<input type="email" id="emailFieldNews" class="email" name="emailFieldNews" placeholder="Enter your email here.">
+						</div>
+						<div align="center">
+							<button type="submit" class="submitNews" id="submitNews">Submit</button>
+							<input type="submit" id="submitNewsHidden" style="display: none;" data-dismiss="modal" data-toggle="modal" data-target="#tyModal">
+							<h2>Or sign-up using your Gmail Account</h2>
+							<div align="center" class="g-signin2" data-onsuccess="onSignIn">
+							</div>
+						</div>					
+						<br>
+					</div>
+				</div>
+			</div>
+        </div>
+		
+        <!--/Newsletter Modal Holla-->
+        <!--Thank You Modal-->
+		<div class="modal fade" id="tyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<span class="close" name="tyClose" data-dismiss="modal">&times;</span>
+						<img src="images/popkids_text8crop.png" alt="popsmartkids_logo">
+						<h2>Thank you for signing up for the newsletter.</h2>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+    <!-- end sign up section -->
+
+    <!-- line separating divs -->
+    <div class="row">
+        <hr class="index-hr">
+    </div>
+
+    <!-- main content area-->
+    <div class="container">
+        <div class="row">
+            <!-- bootstrap column-sm-4 each column takes up 1/3 of the screen 
+                there are other sizes available which will change at which screen
+                size the columns collapse over each other, this one changes at 768 pixels -->
+            <div class="col-sm-7">
+                <h1>Reading and Language Arts</h1>
+                <div class="a">PopSmartkids's reading curriculum spans the entire range of early reading, from learning the names of each letter and the sounds they represent to being able to read books, starting with a few words on a page and gradually advancing to paragraphs.</div>
+                <div class="a">The curriculum for first grade also includes writing and language skills, such as sentence structure and punctuation, parts of speech, and practice with writing genres.</div>
+            </div>
+            <!-- left side text -->
+            <div class="col-sm-5">
+                <!-- img here could be Phu's cycling phone if that's possible -->
+                <img src="images/blur-child-close-up-256468.jpg" class="img-responsive" alt="PopSmartKids Teaching Children">
+            </div>
+        </div>
+        <hr class="index-hr">
+        <div class="row">
+            <div class="col-sm-7 col-sm-push-5">
+                <h1>Why PopSmartKids?</h1>
+                <ul>
+                    <li class="a">Curriculum includes hundreds of entertaining animated activities</li>
+                    <li class="a">Reading curriculum spans the entire range of early learning in kids</li>
+                    <li class="a">Teaches a broad range of subjects, including math and science</li>
+                    <li class="a">Keeps kids engaged with interactive activities in the form of fun games</li>
+                    <li class="a">Unique drawing and painting program for all ages</li>
+                </ul>
+            </div>
+            <div class="col-sm-5 col-sm-pull-7">
+                <img src="images/arched-window-asian-boy-250701.jpg" class="img-responsive" alt="SmartPopKids Apps For Learning">
+            </div>
+        </div>
+		<hr class="index-hr">
+    </div>
+    <!-- Start Testimonials Section -->
+    <div class="container text-center">
+        <h1>Testimonials</h1>
+        <div class="row">
+            <!-- here we do the same thing with columns, but since there are three div sections
+                the columns will space out into thirds on wide screens, then collapse with small screens -->
+            <div class="col-sm-4">
+                <img src="images/dao.jpg" id="icon" alt="SmartPopKids Testimonial">
+                <h4>Dao Nguyen</h4>
+                <p>Known as Fushigidane in Japan, is the first Pokémon species in Nintendo and Game Freak's Pokémon franchise. Designed by Ken Sugimori, their name is a combination of the words "bulb" and "dinosaur." First appearing in Pokémon Red and Green as a Starter Pokémon, they later appeared in subsequent sequels, spin-off games, related merchandise, and animated and printed adaptations of the franchise.</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="images/ryan.jpg" id="icon" alt="SmartPopKids Testimonial">
+                <h4>Ryan Berry</h4>
+                <p>Known as Zenigame in Japan, is a Pokémon species in Nintendo and Game Freak's Pokémon franchise. It was originally conceived by Game Freak's character development team and finalised by Ken Sugimori. Its name was changed from Zenigame to Squirtle during the English localization of the series in order to give it a "clever and descriptive name." In animated appearances, Squirtle is voiced in Japanese by Rikako Aikawa and in English localizations by Eric Stuart, and later Michele Knotz. Squirtle, in the anime, never evolved for reasons never truly explained by the creators.</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="images/family.jpg" id="icon" alt="SmartPopKids Testimonial">
+                <h4>Erik Davis</h4>
+                <p>Known as Hitokage in Japan, is a Pokémon species in Nintendo and Game Freak's Pokémon franchise. Created by Ken Sugimori, Charmander first appeared in the video games Pokémon Red and Blue and subsequent sequels, later appearing in various merchandise, spinoff titles and animated and printed adaptations of the franchise. The end of a Charmander's tail is alight with a flame, and the flame's size reflects both the physical health and the emotions of the individual.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <a href="testimonial.html" class="testButton">
+                    <img src="images/testimonialButton.png" alt="PopSmartKids Testimonial Button" id="testButton"></a>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="page-footer font-small indigo pt-0">
+
+        <!-- light grey line that seperates footer items -->
+        <!-- adjust margin percentages in css file to mess with container sizes -->
+        <hr class="footer-hr">
+
+
+        <!--Footer Links-->
+        <div class="container-fluid">
+
+            <!--Grid row-->
+            <!--        <div class="row pt-5 mb-3 text-center d-flex justify-content-center">-->
+            <div class="row justify-content-md-center text-center">
+
+                <div class="col-md-3 mb-3">
+                </div>
+                <!--Grid column-->
+                <!--            <div class="col-md-3 mb-3">-->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a class="footer-info" href="privacyPolicy.html">Privacy Policy</a>
+                    </h6>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a class="footer-info" href="legal.html">Terms of Use</a>
+                    </h6>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a class="footer-info" href="safeZone.html">safe zone</a>
+                    </h6>
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+            <!-- light grey line that seperates footer items -->
+            <!-- adjust margin percentages to mess with container sizes -->
+            <hr class="footer-hr">
+
+            <!--Grid row-->
+            <div class="row pb-3">
+
+                <!-- Social Media -->
+                <div class="col-md-12">
+                    <div class="mb-5 text-center">
+                        <a href="https://facebook.com/popsmartkids/" class="fab fa-facebook-square"></a>
+                        <a href="https://twitter.com/popsmartkids/" class="fab fa-twitter-square"></a>
+                        <a href="https://linkedin.com/in/priyankaraha/" class="fab fa-linkedin"></a>
+                        <a href="https://linkedin.com/in/priyankaraha/" class="fab fa-google-plus-square"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/Footer Links-->
+
+        <!--Copyright-->
+        <div class="footer-copyright py-3 text-center">
+            © 2018 Copyright: PopSmartKids
+        </div>
+        <!--/Copyright-->
+
+
+        
+
+        <!--Thank You Modal-->
+
+        
+
+
+    </footer>
+    <!--/Footer-->
+
+    <!-- I'm honestly not sure if bootstrap even uses jquery but the tutorial said to put this here -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="https://apis.google.com/js/client:platform.js" async defer></script>
+</body>
+
+</html>
